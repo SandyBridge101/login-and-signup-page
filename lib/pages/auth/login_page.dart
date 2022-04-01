@@ -136,7 +136,15 @@ class _SignUpPage extends State<LoginPage> {
 					),
 					),
 				),
-        
+               ElevatedButton(
+          child: const Text('Don\'t have an account, sign in here'),
+          onPressed: () {
+            Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const LoginPage()),
+                );
+                }
+        ),
 				SizedBox(height: Dimensions.height10,),
 				// RichText(
 				// 	text: TextSpan(
@@ -151,8 +159,11 @@ class _SignUpPage extends State<LoginPage> {
 				
 				],
 				),
+        
 		),
+    
 		);
+
 
 		
 	}
