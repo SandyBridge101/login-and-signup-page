@@ -1,3 +1,4 @@
+import 'package:deliver/pages/auth/sign_up_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:deliver/widgets/big_text.dart';
@@ -141,7 +142,7 @@ class _SignUpPage extends State<LoginPage> {
           onPressed: () {
             Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const LoginPage()),
+            MaterialPageRoute(builder: (context) => const SignUpPage()),
                 );
                 }
         ),
