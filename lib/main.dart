@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Delivery',
-      home: LoginPage(),
+      home: SignUpPage(),
 
     );
   }

@@ -136,6 +136,7 @@ class _SignUpPage extends State<LoginPage> {
 					),
 					),
 				),
+        
 				SizedBox(height: Dimensions.height10,),
 				// RichText(
 				// 	text: TextSpan(

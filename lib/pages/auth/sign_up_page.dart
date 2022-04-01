@@ -1,3 +1,4 @@
+import 'package:deliver/pages/auth/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:deliver/widgets/big_text.dart';
@@ -14,8 +15,9 @@ class SignUpPage extends StatefulWidget {
 	State<SignUpPage> createState() => _SignUpPage();
 
 }
-class _SignUpPage extends State<SignUpPage> {
 
+class _SignUpPage extends State<SignUpPage> {
+  
 
 	@override
 	bool loading = false;
@@ -57,6 +59,7 @@ class _SignUpPage extends State<SignUpPage> {
 			backgroundColor: Color(0xFF24252A),
 			body: SingleChildScrollView(
 				physics: BouncingScrollPhysics(),
+        
 				child: Column(
 				children: [
 				SizedBox(height: Dimensions.screenHeight*0.05,),
@@ -133,7 +136,7 @@ class _SignUpPage extends State<SignUpPage> {
                       // 	return null;
                       // }
                       },
-					child: 
+				child: 
 				Container(
 					width: Dimensions.screenWidth/2,
 					height: Dimensions.screenHeight/13,
@@ -141,6 +144,7 @@ class _SignUpPage extends State<SignUpPage> {
 						borderRadius: BorderRadius.circular(Dimensions.radius30),
 						color: AppColors.mainColor
 						),
+          
 					child: Center(
 						child: BigText(
 						text: "Sign up",
@@ -148,8 +152,18 @@ class _SignUpPage extends State<SignUpPage> {
 						color: Color.fromARGB(255, 32, 30, 30),
 						),
 					),
+          
 					),
 				),
+        ElevatedButton(
+          child: const Text('Open route'),
+          onPressed: () {
+            Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const LoginPage()),
+                );
+                }
+        ),
 				SizedBox(height: Dimensions.height10,),
 				// RichText(
 				// 	text: TextSpan(
